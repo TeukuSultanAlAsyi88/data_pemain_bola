@@ -1,3 +1,109 @@
+# ⚽ Data Pemain Bola
+
+Aplikasi berbasis **Laravel** untuk mengelola data pemain bola, meliputi fitur tambah, edit, hapus, dan detail pemain.
+
+---
+
+## 📸 Tampilan Aplikasi
+
+![Screenshot Aplikasi](<img width="1536" height="782" alt="tampilanweb" src="https://github.com/user-attachments/assets/3a961136-207f-42dc-a167-544a5489d40f" />
+)
+
+> Halaman utama menampilkan daftar pemain lengkap dengan aksi CRUD.
+
+---
+
+## 🚀 Fitur Utama
+
+* ✅ Tambah Data Pemain
+* ✏️ Edit Data Pemain
+* ❌ Hapus Data Pemain
+* 🔍 Detail Pemain
+* 📋 Tabel Data Interaktif
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+* Laravel
+* PHP
+* MySQL
+* Bootstrap / CSS
+
+---
+
+## ⚙️ Cara Instalasi
+
+1. Clone repository:
+
+```bash
+git clone https://github.com/USERNAME/NAMA-REPO.git
+```
+
+2. Masuk ke folder project:
+
+```bash
+cd NAMA-REPO
+```
+
+3. Install dependency:
+
+```bash
+composer install
+```
+
+4. Copy file environment:
+
+```bash
+cp .env.example .env
+```
+
+5. Generate key:
+
+```bash
+php artisan key:generate
+```
+
+6. Atur database di file `.env`
+
+7. Jalankan migration:
+
+```bash
+php artisan migrate
+```
+
+8. Jalankan server:
+
+```bash
+php artisan serve
+```
+
+9. Buka di browser:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 📂 Struktur Fitur
+
+* `/pemain` → halaman utama data pemain
+* `/pemain/create` → tambah data
+* `/pemain/{id}/edit` → edit data
+
+---
+
+## 👨‍💻 Author
+
+**Teuku Sultan Al-Asyi**
+
+---
+
+## ⭐ Catatan
+
+Project ini dibuat untuk keperluan pembelajaran dan pengembangan aplikasi Laravel dasar.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
