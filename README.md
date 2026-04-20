@@ -7,7 +7,7 @@ Aplikasi berbasis **Laravel** untuk mengelola data pemain bola, meliputi fitur t
 ## 📸 Tampilan Aplikasi
 
 <img width="1536" height="782" alt="tampilanweb" src="https://github.com/user-attachments/assets/3a961136-207f-42dc-a167-544a5489d40f" />
-)
+
 
 > Halaman utama menampilkan daftar pemain lengkap dengan aksi CRUD.
 
