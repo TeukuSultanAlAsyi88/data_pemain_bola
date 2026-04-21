@@ -1,48 +1,42 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="page-header">
-        <div>
-            <h2>Tambah Pemain</h2>
-            <p>Isi data pemain baru</p>
-        </div>
-    </div>
+    <h2>Tambah Pemain</h2>
+    <p>Isi data pemain baru</p>
 
     @if($errors->any())
-        <div class="alert alert-danger">
-            <strong>Terjadi kesalahan:</strong>
-            <ul class="error-list">
-                @foreach($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
+        <p><strong>Terjadi kesalahan:</strong></p>
+        <ul>
+            @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
     @endif
 
     <form action="{{ route('pemain.store') }}" method="POST">
         @csrf
 
-        <div class="form-group">
-            <label>Nama</label>
+        <p>
+            <label>Nama</label><br>
             <input type="text" name="nama" value="{{ old('nama') }}">
-        </div>
+        </p>
 
-        <div class="form-group">
-            <label>Posisi</label>
+        <p>
+            <label>Posisi</label><br>
             <input type="text" name="posisi" value="{{ old('posisi') }}">
-        </div>
+        </p>
 
-        <div class="form-group">
-            <label>No Punggung</label>
+        <p>
+            <label>No Punggung</label><br>
             <input type="number" name="no_punggung" value="{{ old('no_punggung') }}">
-        </div>
+        </p>
 
-        <div class="form-group">
-            <label>Negara</label>
+        <p>
+            <label>Negara</label><br>
             <input type="text" name="negara" value="{{ old('negara') }}">
-        </div>
+        </p>
 
-        <button type="submit" class="btn btn-primary">Simpan</button>
-        <a href="{{ route('pemain.index') }}" class="btn btn-secondary">Kembali</a>
+        <button type="submit">Simpan</button>
+        <a href="{{ route('pemain.index') }}">Kembali</a>
     </form>
 @endsection
