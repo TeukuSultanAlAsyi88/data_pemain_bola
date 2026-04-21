@@ -1,35 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="page-header">
-        <div>
-            <h2>Detail Pemain</h2>
-            <p>Informasi lengkap pemain</p>
-        </div>
-    </div>
+    <h2>Detail Pemain</h2>
+    <p>Informasi lengkap pemain</p>
 
-    <div class="detail-box">
-        <div class="detail-item">
-            <h4>Nama</h4>
-            <p>{{ $pemain->nama }}</p>
-        </div>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Nama</th>
+            <td>{{ $pemain->nama }}</td>
+        </tr>
+        <tr>
+            <th>Posisi</th>
+            <td>{{ $pemain->posisi }}</td>
+        </tr>
+        <tr>
+            <th>No Punggung</th>
+            <td>{{ $pemain->no_punggung }}</td>
+        </tr>
+        <tr>
+            <th>Negara</th>
+            <td>{{ $pemain->negara }}</td>
+        </tr>
+    </table>
 
-        <div class="detail-item">
-            <h4>Posisi</h4>
-            <p>{{ $pemain->posisi }}</p>
-        </div>
-
-        <div class="detail-item">
-            <h4>No Punggung</h4>
-            <p>{{ $pemain->no_punggung }}</p>
-        </div>
-
-        <div class="detail-item">
-            <h4>Negara</h4>
-            <p>{{ $pemain->negara }}</p>
-        </div>
-    </div>
-
-    <br>
-    <a href="{{ route('pemain.index') }}" class="btn btn-secondary">Kembali</a>
+    <p><a href="{{ route('pemain.index') }}">Kembali</a></p>
 @endsection
